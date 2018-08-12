@@ -5,25 +5,27 @@ $state-ui-button-line-height: 2.65 !default;
 $state-ui-button-padding: 0 1rem !default;
 $state-ui-button-border: 0 !default;
 $state-ui-button-border-radius: 1px !default;
-$state-ui-button-box-shadow: 0;
 $state-ui-button-background: $state-ui-default-color !default;
 $state-ui-button-color: darken($state-ui-default-color, 60%) !default;
-$state-ui-button-position: relative !default;
-$state-ui-button-overflow: hidden !default;
 $state-ui-button-transition: .15s ease-out !default;
+$state-ui-button-cursor: pointer !default;
+$state-ui-button-outline: none !default;
 
 .state-ui-button {
   font-size: $state-ui-button-font-size;
   font-weight: $state-ui-button-font-weight;
   line-height: $state-ui-button-line-height;
   padding: $state-ui-button-padding;
-  border: $state-ui-button-border;
-  border-radius: $state-ui-button-border-radius;
-  box-shadow: $state-ui-button-box-shadow;
   background: $state-ui-button-background;
   color: $state-ui-button-color;
-  position: $state-ui-button-position;
-  overflow: $state-ui-button-overflow;
   transition: $state-ui-button-transition;
-  cursor: pointer;
+  cursor: $state-ui-button-cursor;
+  border: $state-ui-button-border;
+  outline: $state-ui-button-outline;
+  &.hover {
+    background: lighten($state-ui-button-background, 3%);
+  }
+  &.select {
+    background: darken($state-ui-button-background, 3%);
+  }
 }
