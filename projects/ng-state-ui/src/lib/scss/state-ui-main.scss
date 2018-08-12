@@ -1,0 +1,78 @@
+@import "state-ui-preset";
+html, body {
+  font-family: $state-ui-font-family;
+  font-size: $state-ui-font-size;
+  color: $state-ui-font-color;
+  background: $state-ui-body-background;
+}
+
+input, textarea, button {
+  font-family: $state-ui-font-family;
+}
+
+h1 {
+  font-weight: $state-ui-h1-font-weight;
+  font-size: $state-ui-h1-font-size;
+  margin: $state-ui-h1-margin;
+  padding: $state-ui-h1-padding;
+}
+
+h2 {
+  font-weight: $state-ui-h2-font-weight;
+  font-size: $state-ui-h2-font-size;
+  margin: $state-ui-h2-margin;
+  padding: $state-ui-h2-padding;
+}
+
+h3 {
+  font-weight: $state-ui-h3-font-weight;
+  font-size: $state-ui-h3-font-size;
+  margin: $state-ui-h3-margin;
+  padding: $state-ui-h3-padding;
+}
+
+h4 {
+  font-weight: $state-ui-h4-font-weight;
+  font-size: $state-ui-h4-font-size;
+  margin: $state-ui-h4-margin;
+  padding: $state-ui-h4-padding;
+}
+
+a {
+  color: $state-ui-link-font-color;
+}
+hr {
+  border: $state-ui-hr-border;
+  color: $state-ui-hr-color;
+  background-color: $state-ui-hr-background-color;
+  height: $state-ui-hr-height;
+}
+
+
+ul {
+  margin-top: $state-ui-ul-margin-top;
+  margin-bottom: $state-ui-ul-margin-bottom;
+  ul {
+    margin-left: $state-ui-ul-ul-margin-left;
+  }
+}
+
+ol {
+  margin-top: $state-ui-ol-margin-top;
+  margin-bottom: $state-ui-ol-margin-bottom;
+  ol {
+    margin-left: $state-ui-ol-ol-margin-left;
+  }
+}
+
+.font-bold {
+  font-weight: $state-ui-font-bold !important;
+}
+
+.fluid {
+  width: $state-ui-fluid-width;
+}
+
+.center {
+  text-align: center;
+}

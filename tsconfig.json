@@ -15,6 +15,14 @@
     "lib": [
       "es2017",
       "dom"
-    ]
+    ],
+    "paths": {
+      "ng-state-ui": [
+        "dist/ng-state-ui"
+      ],
+      "ng-state-ui/*": [
+        "dist/ng-state-ui/*"
+      ]
+    }
   }
 }

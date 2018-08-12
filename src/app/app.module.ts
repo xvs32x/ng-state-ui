@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { StateUiButtonModule } from '../../projects/ng-state-ui/src/lib/modules/button/state-ui-button.module';
 
 @NgModule({
   declarations: [
@@ -10,7 +11,8 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    StateUiButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

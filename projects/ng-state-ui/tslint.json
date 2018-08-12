@@ -1,0 +1,17 @@
+{
+    "extends": "../../tslint.json",
+    "rules": {
+        "directive-selector": [
+            true,
+            "attribute",
+            "stateUi",
+            "camelCase"
+        ],
+        "component-selector": [
+            true,
+            "element",
+            "stateUi",
+            "kebab-case"
+        ]
+    }
+}

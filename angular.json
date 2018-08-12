@@ -122,6 +122,46 @@
           }
         }
       }
+    },
+    "ng-state-ui": {
+      "root": "projects/ng-state-ui",
+      "sourceRoot": "projects/ng-state-ui/src",
+      "projectType": "library",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ng-state-ui/tsconfig.lib.json",
+            "project": "projects/ng-state-ui/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "project": "projects/ng-state-ui/ng-package.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ng-state-ui/src/test.ts",
+            "tsConfig": "projects/ng-state-ui/tsconfig.spec.json",
+            "karmaConfig": "projects/ng-state-ui/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ng-state-ui/tsconfig.lib.json",
+              "projects/ng-state-ui/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "ng-state-ui-project"
