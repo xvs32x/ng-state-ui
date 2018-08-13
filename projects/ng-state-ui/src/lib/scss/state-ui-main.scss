@@ -11,6 +11,10 @@ input, textarea, button {
   font-family: $state-ui-font-family;
 }
 
+a {
+  color: $state-ui-link-font-color;
+}
+
 h1 {
   font-weight: $state-ui-h1-font-weight;
   font-size: $state-ui-h1-font-size;
@@ -39,16 +43,12 @@ h4 {
   padding: $state-ui-h4-padding;
 }
 
-a {
-  color: $state-ui-link-font-color;
-}
 hr {
   border: $state-ui-hr-border;
   color: $state-ui-hr-color;
   background-color: $state-ui-hr-background-color;
   height: $state-ui-hr-height;
 }
-
 
 ul {
   margin-top: $state-ui-ul-margin-top;
@@ -63,6 +63,31 @@ ol {
   margin-bottom: $state-ui-ol-margin-bottom;
   ol {
     margin-left: $state-ui-ol-ol-margin-left;
+  }
+}
+
+label {
+  height: 2.62rem;
+  vertical-align: middle;
+  display: inline-block;
+  max-width: 100%;
+  width: 100%;
+  overflow: visible;
+  box-sizing: border-box;
+  margin: 0;
+  border-radius: 0;
+  font: inherit;
+  touch-action: manipulation;
+  -webkit-appearance: none;
+  outline: 0;
+  padding: .85rem;
+  &.is-right {
+    text-align: right;
+  }
+  &.is-top {
+    text-align: left;
+    height: 1.3rem;
+    padding: 0;
   }
 }
 

@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
     <div fxLayout="column" fxLayoutGap="1rem">
       <app-buttons></app-buttons>
       <app-cards></app-cards>
-      <app-input></app-input>
+      <app-form></app-form>
     </div>
     <!--<router-outlet></router-outlet>-->
   `,

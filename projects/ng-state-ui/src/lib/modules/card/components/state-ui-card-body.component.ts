@@ -1,5 +1,5 @@
 import { Component, ElementRef, OnInit } from '@angular/core';
-import { StateUi } from '../../../../classes/state-ui.class';
+import { StateUi } from '../../../classes/state-ui.class';
 
 @Component({
   selector: 'state-ui-card-body',

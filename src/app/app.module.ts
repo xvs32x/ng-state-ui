@@ -9,14 +9,14 @@ import { CardsComponent } from './components/cards.component';
 import { StateUiCardModule } from '../../projects/ng-state-ui/src/lib/modules/card/state-ui-card.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { StateUiInputModule } from '../../projects/ng-state-ui/src/lib/modules/input/state-ui-input.module';
-import { InputComponent } from './components/input.component';
+import { FormComponent } from './components/form.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ButtonsComponent,
     CardsComponent,
-    InputComponent
+    FormComponent
   ],
   imports: [
     BrowserModule,

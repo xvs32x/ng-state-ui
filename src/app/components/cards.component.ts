@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
         <h3>Card</h3>
         <hr>
         <div fxLayout.xs="column" fxLayout="row" fxLayoutGap=".5rem">
-          <state-ui-card-primary fxFlex.xs="100%" fxFlex.lg="calc(33%-2rem)">
+          <state-ui-card fxFlex.xs="100%" fxFlex.lg="calc(33%-2rem)" staticState="primary">
             <state-ui-card-header>
               <h4>Primary card</h4>
             </state-ui-card-header>
@@ -19,8 +19,8 @@ import { Component, OnInit } from '@angular/core';
               <input placeholder="Enter your name" type="text" stateUiInput staticState="primary" />
               <button stateUiButton staticState="primary">Send</button>
             </state-ui-card-footer>
-          </state-ui-card-primary>
-          <state-ui-card-inverted fxFlex.xs="100%" fxFlex.lg="calc(33%-2rem)">
+          </state-ui-card>
+          <state-ui-card fxFlex.xs="100%" fxFlex.lg="calc(33%-2rem)" staticState="inverted">
             <state-ui-card-header>
               <h4>Inverted card</h4>
             </state-ui-card-header>
@@ -31,7 +31,7 @@ import { Component, OnInit } from '@angular/core';
               <input placeholder="Enter your name" type="text" stateUiInput staticState="inverted" />
               <button stateUiButton staticState="inverted">Send</button>
             </state-ui-card-footer>
-          </state-ui-card-inverted>
+          </state-ui-card>
           <state-ui-card fxFlex.xs="100%" fxFlex.lg="calc(33%-2rem)">
             <state-ui-card-header>
               <h4>Default card</h4>
