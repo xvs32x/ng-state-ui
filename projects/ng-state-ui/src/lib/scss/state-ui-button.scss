@@ -5,9 +5,6 @@ $state-ui-button-line-height: 2.65 !default;
 $state-ui-button-padding: 0 1rem !default;
 $state-ui-button-border: 0 !default;
 $state-ui-button-border-radius: 1px !default;
-$state-ui-button-background: $state-ui-default-color !default;
-$state-ui-button-color: darken($state-ui-default-color, 60%) !default;
-$state-ui-button-transition: .15s ease-out !default;
 $state-ui-button-cursor: pointer !default;
 $state-ui-button-outline: none !default;
 
@@ -16,16 +13,38 @@ $state-ui-button-outline: none !default;
   font-weight: $state-ui-button-font-weight;
   line-height: $state-ui-button-line-height;
   padding: $state-ui-button-padding;
-  background: $state-ui-button-background;
-  color: $state-ui-button-color;
-  transition: $state-ui-button-transition;
+  color: darken($state-ui-default-color, 60%);
+  background: $state-ui-default-color;
   cursor: $state-ui-button-cursor;
   border: $state-ui-button-border;
   outline: $state-ui-button-outline;
+  &.primary {
+    background: lighten($state-ui-primary-color, 20%);
+    color: #fff;
+    &:hover {
+      transition: .2s background-color ease-in-out;
+      background: lighten($state-ui-primary-color, 25%);
+    }
+    &.select {
+      background: lighten($state-ui-primary-color, 30%);
+    }
+  }
+  &.inverted {
+    background: lighten($state-ui-inverted-color, 10%);
+    color: #fff;
+    &.hover {
+      transition: .2s background-color ease-in-out;
+      background: lighten($state-ui-inverted-color, 20%);
+    }
+    &.select {
+      background: lighten($state-ui-inverted-color, 30%);
+    }
+  }
   &.hover {
-    background: lighten($state-ui-button-background, 3%);
+    background: darken($state-ui-default-color, 5%);
   }
   &.select {
-    background: darken($state-ui-button-background, 3%);
+    transition: none;
+    background: darken($state-ui-default-color, 10%);
   }
 }

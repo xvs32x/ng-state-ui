@@ -10,7 +10,7 @@
         "component-selector": [
             true,
             "element",
-            "stateUi",
+            "state-ui",
             "kebab-case"
         ]
     }

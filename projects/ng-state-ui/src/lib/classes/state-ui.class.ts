@@ -15,13 +15,12 @@ export class StateUi implements OnChanges {
   ) {
   }
 
-
   ngOnChanges(changes: SimpleChanges) {
     if (changes.dynamicState) {
       this.switchDynamicState(changes.dynamicState.currentValue);
     }
-    if (changes.statisState) {
-      this.switchStaticState(changes.statisState.currentValue);
+    if (changes.staticState) {
+      this.switchStaticState(changes.staticState.currentValue);
     }
   }
 

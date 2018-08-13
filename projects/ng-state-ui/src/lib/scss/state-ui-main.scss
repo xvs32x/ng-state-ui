@@ -1,9 +1,10 @@
+@import "normalize.css/normalize.css";
 @import "state-ui-preset";
 html, body {
   font-family: $state-ui-font-family;
   font-size: $state-ui-font-size;
-  color: $state-ui-font-color;
-  background: $state-ui-body-background;
+  color: $state-ui-inverted-color;
+  background: $state-ui-color;
 }
 
 input, textarea, button {

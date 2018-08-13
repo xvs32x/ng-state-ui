@@ -1,0 +1,68 @@
+@import "state-ui-preset";
+$state-ui-card-background: #fff !default;
+$state-ui-card-position: relative !default;
+$state-ui-card-overflow: hidden !default;
+$state-ui-card-display: flex !default;
+$state-ui-card-flex-direction: column !default;
+$state-ui-card-justify-content: start !default;
+$state-ui-card-border: 1px solid $state-ui-default-color !default;
+$state-ui-card-primary-border: 1px solid $state-ui-primary-color !default;
+$state-ui-card-inverted-border: 1px solid $state-ui-inverted-color !default;
+
+.state-ui-card {
+  display: $state-ui-card-display;
+  overflow: $state-ui-card-overflow;
+  flex-direction: $state-ui-card-flex-direction;
+  justify-content: $state-ui-card-justify-content;
+  position: $state-ui-card-position;
+  border: $state-ui-card-border;
+  background: $state-ui-color;
+  box-sizing: border-box;
+  max-width: 100%;
+
+  .state-ui-card-header {
+    display: flex;
+    padding: 1rem;
+    border-bottom: 1px solid $state-ui-default-color;
+  }
+  .state-ui-card-body {
+    display: flex;
+    padding: 1rem;
+    flex-grow: 1;
+  }
+  .state-ui-card-footer {
+    display: flex;
+    padding: 1rem;
+    border-top: 1px solid $state-ui-default-color;
+  }
+}
+
+.state-ui-card-primary {
+  @extend .state-ui-card;
+  background: $state-ui-primary-color;
+  color: $state-ui-color;
+  border: $state-ui-card-primary-border;
+  .state-ui-card-header {
+    border-bottom: 1px solid lighten($state-ui-primary-color, 30%);
+  }
+  .state-ui-card-footer {
+    border-top: 1px solid lighten($state-ui-primary-color, 30%);
+  }
+}
+
+.state-ui-card-inverted {
+  @extend .state-ui-card;
+  background: $state-ui-inverted-color;
+  color: $state-ui-color;
+  border: $state-ui-card-inverted-border;
+  .state-ui-card-header {
+    border-bottom: 1px solid lighten($state-ui-inverted-color, 20%);
+  }
+  .state-ui-card-footer {
+    border-top: 1px solid lighten($state-ui-inverted-color, 20%);
+  }
+}
+
+
+
+
