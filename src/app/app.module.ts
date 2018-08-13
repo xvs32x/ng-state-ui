@@ -10,6 +10,8 @@ import { StateUiCardModule } from '../../projects/ng-state-ui/src/lib/modules/ca
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { StateUiInputModule } from '../../projects/ng-state-ui/src/lib/modules/input/state-ui-input.module';
 import { FormComponent } from './components/form.component';
+import { StateUiCheckboxModule } from '../../projects/ng-state-ui/src/lib/modules/checkbox/state-ui-checkbox.module';
+import { StateUiFormBackdropModule } from '../../projects/ng-state-ui/src/lib/modules/form-backdrop/state-ui-form-backdrop.module';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { FormComponent } from './components/form.component';
     FlexLayoutModule,
     StateUiButtonModule,
     StateUiCardModule,
-    StateUiInputModule
+    StateUiInputModule,
+    StateUiCheckboxModule,
+    StateUiFormBackdropModule
   ],
   providers: [],
   bootstrap: [AppComponent]

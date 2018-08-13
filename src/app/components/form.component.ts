@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CheckboxValueInterface } from '../../../projects/ng-state-ui/src/lib/modules/checkbox/interfaces/checkbox-value.interface';
 
 @Component({
   selector: 'app-form',
@@ -17,6 +18,10 @@ import { Component, OnInit } from '@angular/core';
               <label ngClass.xs="is-top" class="is-right" fxFlex="20%">Password:</label>
               <input fxFlex="67%" placeholder="Enter password" type="password" stateUiInput staticState="primary"/>
             </div>
+            <div fxLayout="row" fxLayout.xs="column">
+              <label ngClass.xs="is-top" class="is-right" fxFlex="20%">Advanced:</label>
+              <div fxFlex="67%" stateUiFormBackdrop staticState="primary"></div>
+            </div>
           </state-ui-card-body>
         </state-ui-card>
       </div>
@@ -25,6 +30,20 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class FormComponent implements OnInit {
+  checkboxOptions: CheckboxValueInterface[] = [
+    {
+      name: 'option-1',
+      label: 'Option 1'
+    },
+    {
+      name: 'option-2',
+      label: 'Option 2'
+    },
+    {
+      name: 'option-3',
+      label: 'Option 3'
+    }
+  ];
   constructor() {
   }
 
